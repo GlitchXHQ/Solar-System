@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <canvas id="space"></canvas>
+  <div class="controls">
+  <button id="playBtn" style="display:none;">Play</button>
+  <button id="pauseBtn">Pause</button>
+  </div>
+  <script>
+  let isPaused = false;
+  const playBtn = document.getElementById('playBtn');
+  const pauseBtn = document.getElementById('pauseBtn');
+
+  // Expose a global pause flag for your animation loop
+  window.solarSystemPaused = false;
+
+  pauseBtn.addEventListener('click', () => {
+    window.solarSystemPaused = true;
+    isPaused = true;
+    pauseBtn.style.display = 'none';
+    playBtn.style.display = '';
+  });
+
+  playBtn.addEventListener('click', () => {
+    window.solarSystemPaused = false;
+    isPaused = false;
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = '';
+  });
+</script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
