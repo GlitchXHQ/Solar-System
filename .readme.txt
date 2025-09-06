@@ -1,0 +1,85 @@
+This project visualizes a 3D solar system with 7 orbiting planets using Three.js. Each planet orbits the sun at different speeds and distances, with support for pause and play animation controls and a realistic space skybox.
+/solar-system-project/
+│
+├── index.html
+├── main.js
+├── /img/
+│   ├── sun_hd.jpg
+│   ├── mercury_hd.jpg
+│   ├── venus_hd.jpg
+│   ├── earth_hd.jpg
+│   ├── mars_hd.jpg
+│   ├── jupiter_hd.jpg
+│   ├── saturn_hd.jpg
+│   ├── uranus_hd.jpg
+│   ├── neptune_hd.jpg
+│   └── skybox/
+│       ├── space_rt.png
+│       ├── space_lf.png
+│       ├── space_up.png
+│       ├── space_dn.png
+│       ├── space_ft.png
+│       └── space_bk.png
+
+#Technologies Used#
+HTML
+JavaScript
+Three.js
+OrbitControls from Three.js addons
+
+#How to Run the Project#
+1. Clone or download this repository.
+2. Ensure you have a live server to serve static files (e.g., Live Server extension in VS Code).
+3. Open the terminal add the command "npm install" to install all the dependencies installed in package.json file
+4. run the command "npx vite" to get local host
+5. "ctrl+click" on link to visit
+
+#Features Implemented#
+✅ 1. Scene, Camera, Renderer Initialization
+A PerspectiveCamera with zoom controls via OrbitControls.
+
+The WebGLRenderer is appended to the document body.
+
+✅ 2. Lighting and Background
+A PointLight placed at the sun’s position to illuminate the planets.
+
+A cube texture skybox is used to simulate space.
+
+✅ 3. Sun and 7 Planets
+Textured sphere meshes for:
+
+Mercury
+
+Venus
+
+Earth
+
+Mars
+
+Jupiter
+
+Saturn
+
+Uranus
+
+Neptune
+
+The sun is at the center and doesn't orbit.
+
+✅ 4. Orbits
+RingGeometry used to draw orbits for each planet.
+
+✅ 5. Revolution and Rotation
+Planets revolve around the sun at different speeds and radii.
+
+All celestial bodies rotate on their own axes.
+
+✅ 6. Pause/Play Controls
+Simple play/pause buttons to start/stop the revolution/rotation animation.
+
+
+#Controls#
+1.Zoom: Mouse wheel
+2.Rotate view: Click and drag
+3.Play/Pause: Buttons toggle the solar system animation
+

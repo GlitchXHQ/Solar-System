@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+canvas {
+  display: block;
+}
+
+.controls,
+#rotationSpeedControl {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-family: sans-serif;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  font-family: inherit;
+}
+
+#rotationSpeedControl {
+  margin-top: 50px;
+}
